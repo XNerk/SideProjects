@@ -1,3 +1,3 @@
 # Sideprojects1
 
-Basic Calculator - february/7.2.26BasicCalculatorHTML
+[Basic Calculator](https://xnerk.github.io/BasicCalculator/february/7.2.26BasicCalculatorHTML/) - 2 number calculator using Js. 
