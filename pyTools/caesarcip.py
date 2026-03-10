@@ -1,6 +1,13 @@
 # The shift key is set here
 key = 3
+mode1 = True
 
+def mode(bool):
+    if bool==False:
+        return "Decipher"
+    elif bool==True:
+        return "Cipher"
+    
 def caesar_cipher(text, shift):
     result = ""
     for char in text:
@@ -16,10 +23,15 @@ def caesar_cipher(text, shift):
     return result
 
 print(f"\n---XNerk's Caesar Cipher Tool (Default Key: {key}) ---")
-print("Type your message and press Enter. Type 'exit' to quit. Type 'cha_key12' to change key.")
+print("Type your message and press Enter.")
+print("'exit'      - quit.")
+print("'cha_key12' - change cipher key.") 
+print("'mode_1'    - switch between cipher and decipher.") 
+print(" \nCurrent mode:",mode(mode1))
 
 while True:
     user_input = input("\nEnter message: ")
+
     
     if user_input.lower() == 'exit':
         print("Exiting...")
